@@ -318,15 +318,12 @@ function SplashCursor({
 }: SplashCursorProps) {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
-    const [isMobile] = React.useState(() => {
-        if (typeof window !== 'undefined') {
-            return window.innerWidth < 768 || window.matchMedia("(pointer: coarse)").matches;
-        }
-        return false;
-    });
+    // Use a smaller SIM_RESOLUTION on mobile for performance
+    const isMobileDevice = typeof window !== 'undefined' && (window.innerWidth < 768 || window.matchMedia("(pointer: coarse)").matches);
+    const finalSimRes = isMobileDevice ? Math.min(SIM_RESOLUTION, 64) : SIM_RESOLUTION;
+    const finalDyeRes = isMobileDevice ? Math.min(DYE_RESOLUTION, 512) : DYE_RESOLUTION;
 
     useEffect(() => {
-        if (isMobile) return;
 
         const canvas = canvasRef.current;
         if (!canvas) return;
@@ -334,8 +331,8 @@ function SplashCursor({
         const { gl, ext } = getWebGLContext(canvas);
 
         const config: WebGLConfig = {
-            SIM_RESOLUTION,
-            DYE_RESOLUTION: ext.supportLinearFiltering ? DYE_RESOLUTION : 256,
+            SIM_RESOLUTION: finalSimRes,
+            DYE_RESOLUTION: ext.supportLinearFiltering ? finalDyeRes : 256,
             CAPTURE_RESOLUTION,
             DENSITY_DISSIPATION,
             VELOCITY_DISSIPATION,
@@ -848,9 +845,8 @@ function SplashCursor({
             window.removeEventListener('touchmove', handleTouchMove);
             cancelAnimationFrame(animationFrameId);
         };
-    }, [isMobile, SIM_RESOLUTION, DYE_RESOLUTION, CAPTURE_RESOLUTION, DENSITY_DISSIPATION, VELOCITY_DISSIPATION, PRESSURE, PRESSURE_ITERATIONS, CURL, SPLAT_RADIUS, SPLAT_FORCE, SHADING, COLOR_UPDATE_SPEED, BACK_COLOR, TRANSPARENT]);
+    }, [finalSimRes, finalDyeRes, CAPTURE_RESOLUTION, DENSITY_DISSIPATION, VELOCITY_DISSIPATION, PRESSURE, PRESSURE_ITERATIONS, CURL, SPLAT_RADIUS, SPLAT_FORCE, SHADING, COLOR_UPDATE_SPEED, BACK_COLOR, TRANSPARENT]);
 
-    if (isMobile) return null;
 
     return (
         <div className="fixed top-0 left-0 z-50 pointer-events-none w-full h-full">

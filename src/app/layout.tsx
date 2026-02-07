@@ -10,11 +10,20 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://nisark.in"),
   title: {
-    default: "Developer Portfolio | Nisar K",
+    default: "Nisar K | Full Stack Developer",
     template: "%s | Nisar K",
   },
-  description: "Modern, high-performance portfolio of Nisar K, specializing in Full Stack Development, AI, and Python Architecture.",
-  keywords: ["Nisar K", "Full Stack Developer", "AI Developer", "Python Developer", "Portfolio", "Web Development", "React", "Next.js"],
+  description: "Nisar K is a Full Stack Developer specializing in React, Next.js, Django, Python, and scalable web applications.",
+  keywords: [
+    "Nisar K",
+    "Nisar K Full Stack Developer",
+    "Nisar K Portfolio",
+    "Full Stack Developer India",
+    "Next.js Developer",
+    "React Developer",
+    "Python Django Developer"
+  ],
+
   authors: [{ name: "Nisar K" }],
   creator: "Nisar K",
   openGraph: {
@@ -22,8 +31,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://nisark.in",
     siteName: "Nisar K Portfolio",
-    title: "Nisar K | Developer Portfolio",
-    description: "Modern, high-performance portfolio showcasing advanced web applications and AI solutions.",
+    title: "Nisar K | Full Stack Developer",
+    description: "Nisar K is a Full Stack Developer specializing in React, Next.js, Django, Python, and scalable web applications.",
     images: [
       {
         url: "/og-image.png",
@@ -35,14 +44,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nisar K | Developer Portfolio",
-    description: "Modern, high-performance portfolio showcasing advanced web applications and AI solutions.",
+    title: "Nisar K | Full Stack Developer",
+    description: "Nisar K is a Full Stack Developer specializing in React, Next.js, Django, Python, and scalable web applications.",
     images: ["/og-image.png"],
   },
   robots: {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://nisark.in",
+  },
+
 };
 
 const geistSans = Geist({
@@ -62,6 +75,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Nisar K",
+            url: "https://nisark.in",
+            image: "https://nisark.in/icon.png",
+            jobTitle: "Full Stack Developer",
+            sameAs: [
+              "https://linkedin.com/in/nisar-k",
+              "https://github.com/nisark786"
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Nisar K",
+            url: "https://nisark.in",
+            image: "https://nisark.in/favicon.ico",
+            jobTitle: "Full Stack Developer",
+            sameAs: [
+              "https://www.linkedin.com/in/YOUR_LINKEDIN",
+              "https://github.com/YOUR_GITHUB"
+            ]
+          })
+        }}
+      />
+
       <body
         className={`${geistSans.variable} ${outfit.variable} antialiased`}
       >

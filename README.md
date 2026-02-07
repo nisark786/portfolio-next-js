@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 AI Developer Portfolio | Premium & High-Performance
 
-## Getting Started
+A modern, high-performance portfolio website for AI Developers and Software Engineers. Built with **Next.js 15**, **React 19**, and a suite of premium visual libraries to deliver a stunning user experience.
 
-First, run the development server:
+![Portfolio Preview](https://portfolio-ai-nisar.vercel.app/og-image.png) *(Replace with your actual OG image or screenshot)*
 
+## ✨ Key Features
+
+- 🌊 **Fluid Splash Cursor**: Interactive WebGL fluid simulation that responds to mouse and touch interactions.
+- 🚀 **Smooth Inertial Scrolling**: Powered by **Lenis** for a refined, natural scroll experience.
+- 🍱 **Modern Bento Layout**: Clean, organized sections for Projects, Experience, and Skills.
+- 🌓 **Dynamic Theme Engine**: seamless Dark and Light mode switching with **next-themes**.
+- ⚛️ **Framer Motion Animations**: Smooth transitions and scroll-triggered animations.
+- ☁️ **Interactive Skill Cloud**: A dynamic 3D-feeling cloud of technical expertise.
+- 📱 **Fully Responsive**: Crafted to look perfect on everything from workstations to smartphones.
+- 🔍 **SEO & Performance**: 
+  - MetadataBase & OpenGraph support.
+  - Automatically generated `sitemap.xml` and `robots.txt`.
+  - Optimized font loading with `next/font`.
+
+## 🛠️ Technical Stack
+
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Core**: React 19, TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Interactions**: WebGL (Custom Fluid Simulation)
+- **Scrolling**: Lenis
+- **Icons**: Lucide React
+- **Fonts**: Geist Sans & Outfit (Google Fonts)
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/nisark786/portfolio-next-js.git
+cd portfolio-next-js
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+src/
+├── app/            # Next.js App Router (Layouts & Pages)
+├── components/     # UI Components (Sections, UI elements)
+├── lib/            # Utility functions
+└── public/         # Static assets (Images, Resume)
+```
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is open-source. Feel free to use and modify it for your own portfolio!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Crafted with ❤️ by **Nisar**

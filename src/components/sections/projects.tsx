@@ -13,8 +13,8 @@ const projects = [
         tags: ["Next.js 14", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
         image: "/projects/portfolio.png",
         videoUrl: "",
-        github: "https://github.com/nisark786/portfolio-ai",
-        demo: "https://nisar-portfolio.vercel.app/",
+        github: "https://github.com/nisark786/portfolio-next-js",
+        demo: "https://nisark.in/",
     },
     {
         title: "Choco-Nut",

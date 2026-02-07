@@ -55,7 +55,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://nisark.in",
   },
-
+  verification: {
+    google: "PqdS5PR7Tmc7KwL6aSA0j4r5Xlo-O3JqM3PyNy5ISLk",
+  },
 };
 
 const geistSans = Geist({
@@ -88,23 +90,6 @@ export default function RootLayout({
             sameAs: [
               "https://linkedin.com/in/nisar-k",
               "https://github.com/nisark786"
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Nisar K",
-            url: "https://nisark.in",
-            image: "https://nisark.in/favicon.ico",
-            jobTitle: "Full Stack Developer",
-            sameAs: [
-              "https://www.linkedin.com/in/YOUR_LINKEDIN",
-              "https://github.com/YOUR_GITHUB"
             ]
           })
         }}

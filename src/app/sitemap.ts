@@ -1,19 +1,13 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://nisar-portfolio.vercel.app'
+    const baseUrl = 'https://nisark.in'
     return [
         {
             url: baseUrl,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 1,
-        },
-        {
-            url: `${baseUrl}/resume.pdf`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
         },
     ]
 }

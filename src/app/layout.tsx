@@ -8,9 +8,41 @@ import { Particles } from "@/components/particles";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-ai-nisar.vercel.app"),
-  title: "AI Developer Portfolio | Modern & Premium",
-  description: "Modern, high-performance AI developer portfolio showcase.",
+  metadataBase: new URL("https://nisark.in"),
+  title: {
+    default: "Developer Portfolio | Nisar K",
+    template: "%s | Nisar K",
+  },
+  description: "Modern, high-performance portfolio of Nisar K, specializing in Full Stack Development, AI, and Python Architecture.",
+  keywords: ["Nisar K", "Full Stack Developer", "AI Developer", "Python Developer", "Portfolio", "Web Development", "React", "Next.js"],
+  authors: [{ name: "Nisar K" }],
+  creator: "Nisar K",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://nisark.in",
+    siteName: "Nisar K Portfolio",
+    title: "Nisar K | Developer Portfolio",
+    description: "Modern, high-performance portfolio showcasing advanced web applications and AI solutions.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Nisar K Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nisar K | Developer Portfolio",
+    description: "Modern, high-performance portfolio showcasing advanced web applications and AI solutions.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const geistSans = Geist({

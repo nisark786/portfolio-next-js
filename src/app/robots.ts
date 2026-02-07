@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://nisar-portfolio.vercel.app/sitemap.xml',
+        sitemap: 'https://nisark.in/sitemap.xml',
     }
 }

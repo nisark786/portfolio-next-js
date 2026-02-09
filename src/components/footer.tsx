@@ -17,7 +17,7 @@ export function Footer() {
                     {/* Brand */}
                     <div>
                         <h3 className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text font-outfit text-xl font-bold text-transparent">
-                            Nisar
+                            Nisar K
                         </h3>
                         <p className="mt-2 text-sm text-muted">
                             Building intelligent systems with modern technologies.
@@ -63,7 +63,7 @@ export function Footer() {
 
                 <div className="mt-8 border-t border-border pt-8 text-center">
                     <p className="text-sm text-muted">
-                        © {currentYear} Nisar. Built with Next.js & Tailwind CSS.
+                        © {currentYear} Nisar K. Built with Next.js & Tailwind CSS.
                     </p>
                 </div>
             </div>

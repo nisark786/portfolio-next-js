@@ -29,7 +29,7 @@ export function Navbar() {
                         className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text font-outfit text-2xl font-bold text-transparent"
                         whileHover={{ scale: 1.05 }}
                     >
-                        Nisar
+                        Nisar K
                     </motion.span>
                 </Link>
 

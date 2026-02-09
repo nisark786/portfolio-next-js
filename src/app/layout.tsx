@@ -77,27 +77,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Nisar K",
-            url: "https://nisark.in",
-            image: "https://nisark.in/icon.png",
-            jobTitle: "Full Stack Developer",
-            sameAs: [
-              "https://linkedin.com/in/nisar-k",
-              "https://github.com/nisark786"
-            ]
-          })
-        }}
-      />
 
       <body
         className={`${geistSans.variable} ${outfit.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Nisar K",
+              "url": "https://nisark.in",
+              "image": "https://nisark.in/icon.png",
+              "jobTitle": "Full Stack Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance / Independent"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/in/nisar-k",
+                "https://github.com/nisark786"
+              ]
+            }),
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

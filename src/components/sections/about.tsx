@@ -35,7 +35,7 @@ export function About() {
                                 {/* Use a placeholder or user's image if available. user asked to "give my photo" but didn't provide URL for profile, unlike project. using placeholder. */}
                                 <img
                                     src="/profile.jpg"
-                                    alt="Nisar Patel"
+                                    alt="Nisar K - Full Stack Developer"
                                     className="h-full w-full object-cover transition-all duration-500 dark:grayscale dark:hover:grayscale-0"
                                 />
                             </div>

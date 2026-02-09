@@ -28,7 +28,7 @@ export function Hero() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
                     >
-                        HI, I'M NISAR
+                        HI, I'M NISAR K
                     </motion.p>
 
                     <motion.h1

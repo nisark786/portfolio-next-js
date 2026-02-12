@@ -5,10 +5,12 @@ import { About } from "@/components/sections/about";
 import { Projects } from "@/components/sections/projects";
 import { Experience } from "@/components/sections/experience";
 import { Contact } from "@/components/sections/contact";
+import { FAQSchema } from "@/components/faq-schema";
 
 export default function Home() {
   return (
     <>
+      <FAQSchema />
       <Navbar />
       <main className="min-h-screen">
         <Hero />

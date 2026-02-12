@@ -1,4 +1,4 @@
-# 🚀 AI Developer Portfolio | Premium & High-Performance
+# 🚀 Developer Portfolio | Premium & High-Performance
 
 A modern, high-performance portfolio website for AI Developers and Software Engineers. Built with **Next.js 15**, **React 19**, and a suite of premium visual libraries to deliver a stunning user experience.
 

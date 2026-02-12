@@ -20,7 +20,7 @@ export function Footer() {
                             Nisar K
                         </h3>
                         <p className="mt-2 text-sm text-muted">
-                            Building intelligent systems with modern technologies.
+                            Full Stack Python Developer from Malappuram, Kerala. Building scalable web applications with Django, FastAPI, and React.
                         </p>
                     </div>
 
@@ -63,7 +63,7 @@ export function Footer() {
 
                 <div className="mt-8 border-t border-border pt-8 text-center">
                     <p className="text-sm text-muted">
-                        © {currentYear} Nisar K. Built with Next.js & Tailwind CSS.
+                        © {currentYear} Nisar K - Full Stack Python Developer | Malappuram, Kerala, India | Built with Next.js & Tailwind CSS
                     </p>
                 </div>
             </div>

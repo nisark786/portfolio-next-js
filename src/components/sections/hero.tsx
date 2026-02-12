@@ -38,10 +38,11 @@ export function Hero() {
                         transition={{ delay: 0.3 }}
                     >
                         <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-                            Full Stack{" "}
+                            Nisar K
                         </span>
-                        <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">
-                            <GlitchText text="Python Developer" />
+                        <br />
+                        <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
+                            <GlitchText text="Full Stack Python Developer" />
                         </span>
                     </motion.h1>
 
@@ -51,8 +52,7 @@ export function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}
                     >
-                        specializing in Django, FastAPI, and React Architecture. Building scalable,
-                        high-performance web applications with modern technologies.
+                        Nisar K is a Full Stack Python Developer from Malappuram, Kerala, specializing in Django, FastAPI, and React Architecture. Expert in building scalable, high-performance web applications with Docker, Redis, and modern technologies.
                     </motion.p>
 
                     <motion.div

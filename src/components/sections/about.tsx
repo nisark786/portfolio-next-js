@@ -35,7 +35,7 @@ export function About() {
                                 {/* Use a placeholder or user's image if available. user asked to "give my photo" but didn't provide URL for profile, unlike project. using placeholder. */}
                                 <img
                                     src="/profile.jpg"
-                                    alt="Nisar K - Full Stack Developer"
+                                    alt="Nisar K - Full Stack Python Developer from Malappuram, Kerala specializing in Django, FastAPI, React, and Next.js"
                                     className="h-full w-full object-cover transition-all duration-500 dark:grayscale dark:hover:grayscale-0"
                                 />
                             </div>
@@ -43,14 +43,14 @@ export function About() {
 
                         <div className="prose prose-invert">
                             <p className="text-lg leading-relaxed text-muted">
-                                I'm a <span className="text-accent-primary font-bold">Full Stack Python Developer</span> specializing in the Python ecosystem{" "}
-                                <span className="text-foreground">(Django, FastAPI)</span> and modern frontend{" "}
-                                <span className="text-foreground">(React, Next.js)</span>. Expert in architecting distributed systems using{" "}
+                                <span className="text-accent-primary font-bold">Nisar K</span> is a <span className="text-accent-primary font-bold">Full Stack Python Developer</span> from Malappuram, Kerala, specializing in the Python ecosystem{" "}
+                                <span className="text-foreground">(Django, FastAPI)</span> and modern frontend frameworks{" "}
+                                <span className="text-foreground">(React, Next.js, TypeScript)</span>. Expert in architecting distributed systems using{" "}
                                 <span className="text-accent-primary font-bold">Docker, Celery, and Redis</span> for asynchronous task processing and real-time communication via{" "}
                                 <span className="text-foreground">WebSockets</span>.
                             </p>
                             <p className="text-lg leading-relaxed text-muted mt-4">
-                                I've implemented AI-driven features with <span className="text-accent-primary font-bold">Gemini Flash</span>, reducing response times by 40% and enhancing security with <span className="text-foreground">JWT & OAuth2</span>. Currently pursuing <span className="text-foreground">Bachelor of Arts in Arabic</span> at University of Calicut (Expected 2026).
+                                With a passion for building high-performance, scalable web applications, Nisar K has implemented AI-driven features with <span className="text-accent-primary font-bold">Gemini Flash</span>, reducing response times by 40% and enhancing security with <span className="text-foreground">JWT & OAuth2</span> authentication. Currently pursuing <span className="text-foreground">Bachelor of Arts in Arabic</span> at University of Calicut (Expected 2026), combining technical expertise with diverse educational background.
                             </p>
                         </div>
                     </motion.div>
@@ -68,7 +68,7 @@ export function About() {
                         <SkillCloud />
                     </motion.div>
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     );
 }

@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Outfit } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import SplashCursor from "@/components/splash-cursor";
-import { SmoothScroll } from "@/components/smooth-scroll";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { Particles } from "@/components/particles";
+import { ClientComponents } from "@/components/client-components";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -90,11 +89,15 @@ export const metadata: Metadata = {
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap',
+  preload: true,
 });
 
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
+  display: 'swap',
+  preload: true,
 });
 
 export default function RootLayout({
@@ -209,8 +212,7 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange={false}
         >
-          <SmoothScroll />
-          <SplashCursor />
+          <ClientComponents />
           <ScrollProgress />
           <Particles />
           {children}

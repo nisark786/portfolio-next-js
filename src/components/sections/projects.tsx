@@ -111,6 +111,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                     src={project.image}
                     alt={`${project.title} - ${project.description.slice(0, 100)} - Built by Nisar K using ${project.tags.slice(0, 3).join(', ')}`}
                     fill
+                    priority={index === 0}
+                    quality={85}
                     className={`object-cover transition-transform duration-500 group-hover:scale-110 ${isHovered && project.videoUrl ? 'opacity-0' : 'opacity-100'}`}
                 />
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { SkillCloud } from "@/components/skill-cloud";
 
 export function About() {
@@ -32,10 +33,13 @@ export function About() {
                         <div className="relative w-48 h-48 mx-auto lg:mx-0">
                             <div className="absolute inset-0 bg-gradient-to-br from-accent-primary to-accent-secondary rounded-2xl rotate-6 opacity-50 blur-lg" />
                             <div className="relative h-full w-full overflow-hidden rounded-2xl border-2 border-accent-primary/20 bg-surface">
-                                {/* Use a placeholder or user's image if available. user asked to "give my photo" but didn't provide URL for profile, unlike project. using placeholder. */}
-                                <img
+                                <Image
                                     src="/profile.jpg"
                                     alt="Nisar K - Full Stack Python Developer from Malappuram, Kerala specializing in Django, FastAPI, React, and Next.js"
+                                    width={192}
+                                    height={192}
+                                    priority
+                                    quality={85}
                                     className="h-full w-full object-cover transition-all duration-500 dark:grayscale dark:hover:grayscale-0"
                                 />
                             </div>

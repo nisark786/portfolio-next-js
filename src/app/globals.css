@@ -33,7 +33,7 @@
   --font-body: var(--font-geist-sans);
 }
 
-* {
+html {
   scroll-behavior: smooth;
 }
 

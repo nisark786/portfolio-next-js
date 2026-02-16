@@ -26,15 +26,23 @@ export function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="mb-4 font-medium text-foreground">Quick Links</h4>
+                        <h4 className="mb-4 font-medium text-foreground">Pages</h4>
                         <ul className="space-y-2">
-                            {["About", "Projects", "Experience", "Contact"].map((item) => (
-                                <li key={item}>
+                            {[
+                                { name: "About", href: "/about" },
+                                { name: "Projects", href: "/projects" },
+                                { name: "Experience", href: "/experience" },
+                                { name: "Skills", href: "/skills" },
+                                { name: "Services", href: "/services" },
+                                { name: "Blog", href: "/blog" },
+                                { name: "Contact", href: "/contact" },
+                            ].map((item) => (
+                                <li key={item.name}>
                                     <Link
-                                        href={`#${item.toLowerCase()}`}
+                                        href={item.href}
                                         className="text-sm text-muted transition-colors hover:text-accent-primary"
                                     >
-                                        {item}
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
@@ -61,10 +69,18 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-8 border-t border-border pt-8 text-center">
-                    <p className="text-sm text-muted">
+                <div className="mt-8 border-t border-border pt-8">
+                    <p className="text-center text-sm text-muted mb-3">
                         © {currentYear} Nisar K - Full Stack Python Developer | Malappuram, Kerala, India | Built with Next.js & Tailwind CSS
                     </p>
+                    <div className="flex justify-center gap-6 text-xs text-muted">
+                        <Link href="/privacy-policy" className="hover:text-accent-primary transition-colors">
+                            Privacy Policy
+                        </Link>
+                        <Link href="/terms-of-service" className="hover:text-accent-primary transition-colors">
+                            Terms of Service
+                        </Link>
+                    </div>
                 </div>
             </div>
         </footer>

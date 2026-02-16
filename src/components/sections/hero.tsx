@@ -62,14 +62,14 @@ export function Hero() {
                         transition={{ delay: 0.5 }}
                     >
                         <a
-                            href="#projects"
+                            href="/projects"
                             className="group relative overflow-hidden rounded-full bg-accent-primary px-8 py-3 font-medium text-white transition-all hover:scale-105 hover:shadow-lg hover:shadow-accent-primary/50"
                         >
                             <span className="relative z-10">View My Work</span>
                             <div className="absolute inset-0 -z-0 bg-gradient-to-r from-accent-primary to-accent-secondary opacity-0 transition-opacity group-hover:opacity-100" />
                         </a>
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="rounded-full border border-border bg-surface/50 px-8 py-3 font-medium backdrop-blur-sm transition-all hover:border-accent-primary hover:bg-accent-primary/10"
                         >
                             Get in Touch
